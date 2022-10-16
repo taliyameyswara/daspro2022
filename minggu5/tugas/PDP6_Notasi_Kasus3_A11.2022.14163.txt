@@ -1,0 +1,35 @@
+Kasus 3 - Taliya Meyswara (A11.2022.14163)
+
+PROGRAM Menampilkan Diskon dan Harga Setelah Diskon
+{program menerima input bilangan double}
+
+KAMUS 
+	barang, harga, diskon, total: interger
+
+ALGORITMA
+	harga = 10000
+	input(barang)
+	if barang >=3 & barang <= 5 then
+	diskon = (harga*barang) * 0.02
+	total = (harga*barang)-diskon
+		output ("Mendapatkan diskon sebesar 2%")
+		output ("Harga yang harus dibayarkan = total")
+	else if barang >=6 && barang <=10
+	diskon = (harga*barang) * 0.05
+	total = (harga*barang)-diskon
+		output ("Mendapatkan diskon sebesar 5%")
+		output ("Harga yang harus dibayarkan = total") 
+	else if barang >=11 && barang <=17
+	diskon = (harga*barang) * 0.1
+	total = (harga*barang)-diskon
+		output ("Mendapatkan diskon sebesar 10%")
+		output ("Harga yang harus dibayarkan = total")
+	else if barang >= 18
+	diskon = (harga*barang) * 0.2
+	total = (harga*barang)-diskon
+		output ("Mendapatkan diskon sebesar 20%")
+		output ("Harga yang harus dibayarkan = total")
+	else
+	total = (harga*barang)
+		output ("Tidak mendapat diskon")
+		output ("Harga yang harus dibayarkan = total")

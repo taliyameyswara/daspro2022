@@ -1,0 +1,19 @@
+input = 52
+mod - 52 mod(%) 10 = 2
+bagi int - 52 / 10 = 5
+
+hasil = mod*10 + bagi int
+= 2*10 +5 = 25
+
+notasi
+
+Kamus // 2 variable
+first number: interger
+second number: interger
+
+Algoritma
+52 = (5 x 10^1) + (2 x 10^0)
+52mod10 = 2 (.10)
+52/10 = 5 (.1)
+
+

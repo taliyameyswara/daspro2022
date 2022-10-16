@@ -1,0 +1,28 @@
+Kasus 1 - Taliya Meyswara (A11.2022.14163)
+
+PROGRAM Konversi Nilai
+{program menampilkan konversi nilai dari input angka ke huruf}
+
+KAMUS 
+	nilai : interger
+
+ALGORITMA
+	input(nilai)
+	if nilai >= 85 nilai <= 100 then
+		output ("Nilai = A")
+	else if nilai >= 80 & nilai < 85
+		output ("Nilai = B")
+	else if nilai >= 70 & nilai < 80
+		output ("Nilai = BC")
+	else if nilai >= 65 & nilai < 70
+		output ("Nilai = B")
+	else if nilai >= 60 & nilai < 65
+		output ("Nilai = C")
+	else if nilai >= 50 & nilai < 60
+		output ("Nilai = B")
+	else 
+		output ("Nilai=E")
+
+
+
+

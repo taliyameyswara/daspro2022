@@ -1,0 +1,31 @@
+Kasus 2 - Taliya Meyswara (A11.2022.14163)
+
+PROGRAM Menampilkan Bilangan 10
+{program menampilkan menerima bilangan interger}
+
+KAMUS 
+	bil, a, hasil : interger
+
+ALGORITMA
+	input(bil)
+	if bil<10 then
+	a = -bil+10
+        hasil = bil + a
+		output ("Nilai = Bilangan Anda KURANG DARI 10")
+		output ("Untuk menjadi 10, maka program harus ditambahkan a")
+		output ("Silahkan tekan angka a = ")
+	input (a)
+		output ("Bilangan Anda = hasil")
+		output ("Selamat, program telah menampilkan 10")
+	else if bil>10
+ 	a = bil-10
+        hasil = bil + a
+	output ("Nilai = Bilangan Anda LEBIH DARI 10")
+		output ("Untuk menjadi 10, maka program harus dikurangkan a")
+		output ("Silahkan tekan angka a = ")
+	input (a)
+		output ("Bilangan Anda = hasil")
+		output ("Selamat, program telah menampilkan 10")
+	else 
+		output ("Bilangan Anda Sudah 10")
+		output ("Selamat, program telah menampilkan 10")

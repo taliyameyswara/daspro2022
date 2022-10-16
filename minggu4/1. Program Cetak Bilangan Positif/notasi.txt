@@ -1,0 +1,37 @@
+Notasi Algoritmik
+
+Program Positive Number
+
+Kamus (variable) 
+number : interger
+multiplier : interger
+
+
+Algoritma
+input (number)
+if (number <0) then
+	number * = -1
+	input  (multiplier)
+output (number)
+
+
+Body Program
+#include <iostream>
+using namspace std;
+
+int main(){
+	int number;
+	int multiplier;
+
+	cout << "input number: " ; cin >> number;
+	
+	if (number < 0) 
+	{
+	cout "input multiplier: " ; cin >> multiplier;
+	number * = multiplier;
+	}
+
+	cout << number << "positive" << endl;
+
+	return 0;
+}
