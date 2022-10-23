@@ -4,53 +4,39 @@ using namespace std;
 
 int main()
 {
-    cout << "Taliya Meyswara (A11.2022.14163)" << endl;
-    cout << "=====================================" << endl;
-    int num,first,sec,last,rev;
-    cout << "Input 3 digit number = " ; cin >> num;
-    if (num>=100 && num<=999){
-        cout << "Your number is positive" << endl;
-        if (num%2==0){
-            cout << "Your number is even" << endl;
+    cout << "3 Input Bilangan Terbesar, Terkecil, atau Sama" << endl;
+    int bil1,bil2,bil3;
+    cout << "Input bilangan pertama = " ; cin >> bil1;
+    cout << "Input bilangan kedua = " ; cin >> bil2;
+    cout << "Input bilangan ketiga = "; cin >> bil3;
+
+    //terkecil
+        if (bil1<bil2 && bil1<bil3){
+            cout << bil1 << " adalah bilangan terkecil" << endl;
         }
-        else {
-            cout << "Your number is odd" << endl;
+        else if (bil2<bil1 && bil2<bil3){
+            cout << bil2 << " adalah bilangan terkecil" << endl;
         }
-        //145/100 = 1
-        //145%10= (145-1)%100/10 = 4
-        //145%10 = 5
-        first = num/100;
-        sec = ((num-1)%100)/10;
-        last = num%10;
-        //smallest
-        if (first<sec && first<last){
-            cout << first << " is the smallest number" << endl;
-        }
-        else if (sec<first && sec<last){
-            cout << sec << " is the smallest number" << endl;
-        }
-        else if (last<first && last<sec){
-            cout << last << " is the smallest number" << endl;
+        else if (bil3<bil1 && bil3<bil2){
+            cout << bil3 << " adalah bilangan terkecil" << endl;
         }
 
-        //largest
-        if (first>sec && first>last){
-            cout << first << " is the largest number" << endl;
+    //terbesar
+        if (bil1>bil2 && bil1>bil3){
+            cout << bil1 << " adalah bilangan terbesar" << endl;
         }
-        else if (sec>first && sec>last){
-            cout << sec << " is the largest number" << endl;
+        else if (bil2>bil1 && bil2>bil3){
+            cout << bil2 << " adalah bilangan terbesar" << endl;
         }
-        else if (last>first && last>sec){
-            cout << last << " is the largest number" << endl;
+        else if (bil3>bil2 && bil3>bil2){
+            cout << bil3 << " adalah bilangan terbesar" << endl;
         }
 
-        rev=(last*100)+(sec*10)+first;
-        //reverse number
-        cout << "Reversed number = " << rev << endl;
+    //sama
+        if (bil1==bil2 || bil1==bil3 || bil2==bil1 || bil2==bil3 || bil3==bil1 || bil3==bil2){
+            cout << "ada bilangan yang sama" << endl;
+        }
 
-    }
-    else {
-        cout << "Your number less or more than 3 digit" << endl;
-    }
+
     return 0;
 }
