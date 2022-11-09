@@ -37,7 +37,7 @@ int main(){
 	}
 	
 		break;
-	default :
+	case 2:
 	cout << "Dine in" << endl;
 	cout << "Pembelian dine in mendapatkan diskon 15%" << endl;
 	ppn = harga*0.11;
@@ -45,6 +45,10 @@ int main(){
 	hasil = harga + ppn - diskon;
 	cout << "Harga + PPN - Diskon" << endl;
 	cout << harga << " + " << ppn << " - " << diskon << " = " << hasil << endl;
+
+		break;
+	default:
+	cout << "Input yg anda masukkan tidak valid" << endl;
 	}
 	
 
